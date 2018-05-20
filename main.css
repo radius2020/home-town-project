@@ -81,7 +81,7 @@ ul {
  */
 
 .nav {
-  width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,15 +96,19 @@ ul {
   box-sizing: border-box;
   display: inline-block;
   width: 24%;
+  min-width: 48;
+  min-height: 48;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
+  padding: 40px;
   text-transform: uppercase;
 }
 
 .nav a {
   text-decoration: none;
   color: #616161;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .nav a:hover {
@@ -121,7 +125,7 @@ ul {
 
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -141,7 +145,7 @@ main {
 
 .hero {
   float: left;
-  width: 480px;
+  width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
@@ -169,7 +173,7 @@ main {
 
 .top-news {
   float: right;
-  width: 320px;
+  width: 100%;
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
@@ -199,6 +203,8 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .top-news__item a:hover,
@@ -214,7 +220,7 @@ main {
  */
 
 .scores {
-  width: 480px;
+  width: 100%;
   float: left;
   padding-top: 1em;
 }
@@ -264,7 +270,7 @@ main {
 
 .weather {
   float: right;
-  width: 320px;
+  width: 100%;
   padding: 1em;
 }
 
@@ -280,7 +286,7 @@ main {
 }
 
 .weather__today {
-  width: 60%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -299,7 +305,7 @@ main {
 
 .weather__next__item {
   display: inline-block;
-  width: 20%;
+  width: 100%;
   text-align: center;
 }
 
@@ -369,4 +375,6 @@ footer li {
 footer a {
   text-decoration: none;
   color: #333;
+  min-width: 48px;
+  min-height: 48px;
 }
